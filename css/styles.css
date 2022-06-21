@@ -39,6 +39,8 @@ img {
 /* Сітка Flex */
 
 .card-set {
+  margin: 0px;
+  padding: 0px;
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--indent));
