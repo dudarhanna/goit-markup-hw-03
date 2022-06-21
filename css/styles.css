@@ -14,7 +14,6 @@
   --background-btn: #f5f4fa;
   --portfolio-cl: #eeeeee;
   /* Змінні */
-  --items: 3;
   --indent: 30px;
 }
 
@@ -42,12 +41,16 @@ img {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin: calc(-1 * var(--indent) / 2);
+  margin-left: calc(-1 * var(--indent));
+  margin-top: calc(-1 * var(--indent));
 }
 .card-set-item {
-  flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
-  margin: calc(var(--indent) / 2);
+  flex-basis: calc(100% / 3 - var(--indent));
+  margin-left: var(--indent);
+  margin-top: var(--indent);
+  list-style: none;
 }
+
 /*  Кінець Сітка Flex */
 
 .section {
@@ -60,8 +63,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 1px solid red;
 }
 /* Загальні стилі класів спільного користування */
 .link {
@@ -348,11 +349,9 @@ img {
 .list-button {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
-.list-portfolio {
-  padding-top: 50px;
-}
 .portfolio-btn-list:not(:last-child) {
   margin-right: 8px;
 }
